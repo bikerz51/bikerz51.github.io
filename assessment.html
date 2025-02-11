@@ -1,4 +1,4 @@
-elopment<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -16,34 +16,40 @@ elopment<!DOCTYPE html>
             background-color: #004a99;
             color: white;
             padding: 20px;
-            font-size: 35px; /* Increased header text size */
+            font-size: 30px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            position: relative;
+            flex-wrap: wrap;
+            text-align: center;
         }
         .logo {
-            width: 200px; /* Increased logo size */
+            width: 150px;
         }
         nav {
             padding: 10px;
             background-color: #0073e6;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
         }
         nav a {
-            margin: 10px;
+            margin: 5px;
             padding: 10px;
             background-color: white;
             color: #0073e6;
             text-decoration: none;
             border-radius: 5px;
             font-weight: bold;
+            flex: 1 1 150px;
+            text-align: center;
         }
         nav a:hover {
             background-color: #005bb5;
             color: white;
         }
         .container {
-            max-width: 1400px;
+            max-width: 1200px;
             margin: auto;
             padding: 20px;
             background-color: white;
@@ -53,36 +59,26 @@ elopment<!DOCTYPE html>
             display: flex;
             align-items: center;
             justify-content: space-between;
+            flex-wrap: wrap;
             text-align: left;
         }
-        .left-container {
+        .left-container, .right-container {
             flex: 1;
             text-align: center;
+            padding: 10px;
         }
-        .left-container img {
-            width: 190%;
-            max-width: 1900px;
+        .left-container img, .right-container img {
+            width: 100%;
+            max-width: 500px;
             border-radius: 10px;
-            margin-left: -350px;
-        }
-        .right-container {
-            flex: 1;
-            text-align: center;
-        }
-        .right-container img {
-            width: 190%;
-            max-width: 1900px;
-            border-radius: 10px;
-            margin-right: -200px;
         }
         .text-container {
             flex: 2;
             padding: 20px;
             text-align: left;
             font-size: 18px;
-            margin-left: 0px;
-            margin-right: 0px;
-            max-width: 900px; 
+            margin: auto;
+            max-width: 900px;
         }
         .text-container h2 {
             color: #004a99;
@@ -104,20 +100,51 @@ elopment<!DOCTYPE html>
             display: flex;
             justify-content: center;
             margin-top: 20px;
+            flex-wrap: wrap;
         }
         .image-container img {
-            width: 150px;
-            height: 150px;
-            margin: 10px;
+            width: 100px;
+            height: 100px;
+            margin: 5px;
             border-radius: 10px;
         }
         footer {
             text-align: center;
-            padding: 10px;
+            padding: 15px;
             background-color: #004a99;
             color: white;
             margin-top: 20px;
             position: relative;
+        }
+        /* Responsive Design */
+        @media screen and (max-width: 900px) {
+            header {
+                font-size: 24px;
+                flex-direction: column;
+                text-align: center;
+            }
+            .logo {
+                width: 120px;
+            }
+            .container {
+                flex-direction: column;
+                text-align: center;
+            }
+            .left-container img, .right-container img {
+                max-width: 100%;
+                margin: auto;
+            }
+            .text-container {
+                text-align: center;
+            }
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav a {
+                width: 90%;
+                text-align: center;
+            }
         }
     </style>
 </head>
@@ -145,21 +172,21 @@ elopment<!DOCTYPE html>
     <div class="text-container">
         <h2>Measuring Success & Impact</h2>
         <p>
-            To ensure the **Fleming Fund Fellowship Development Programme** delivers tangible outcomes, we apply rigorous evaluation techniques to track impact and improvement in fellows’ communication, engagement, and policy influence.
+            To ensure the **Fleming Fund Fellowship Training Programme** delivers tangible outcomes, we apply rigorous evaluation techniques to track impact and improvement in fellows’ communication, engagement, and policy influence.
         </p>
         <h3>Key Success Metrics:</h3>
         <ul>
-            <li>✅ Pre- and post-development self-assessments** on confidence and communication ability.</li>
-            <li>✅ Stakeholder feedback surveys** from policymakers and public engagement activities.</li>
-            <li>✅ Publication & engagement tracking**, monitoring fellow contributions in scientific, media, and policy spaces.</li>
-            <li>✅ One-on-one coaching evaluations** to gauge individual progress.</li>
-            <li>✅ AI-driven sentiment analysis** to measure engagement impact.</li>
-            <li>✅ Automated dashboards** to track fellows' contributions across publications, media, and policy influence.</li>
+            <li>✅ **Pre- and post-training self-assessments** on confidence and communication ability.</li>
+            <li>✅ **Stakeholder feedback surveys** from policymakers and public engagement activities.</li>
+            <li>✅ **Publication & engagement tracking**, monitoring fellow contributions in scientific, media, and policy spaces.</li>
+            <li>✅ **One-on-one coaching evaluations** to gauge individual progress.</li>
+            <li>✅ **AI-driven sentiment analysis** to measure engagement impact.</li>
+            <li>✅ **Automated dashboards** to track fellows' contributions across publications, media, and policy influence.</li>
         </ul>
         <h3>AI-Powered Enhancements:</h3>
         <ul>
-            <li>🔹 AI-powered engagement tracking** for real-time analysis of audience interaction.</li>
-            <li>🔹 Machine learning models** to analyze and predict communication impact.</li>
+            <li>🔹 **AI-powered engagement tracking** for real-time analysis of audience interaction.</li>
+            <li>🔹 **Machine learning models** to analyze and predict communication impact.</li>
         </ul>
         <h3>DEI Considerations:</h3>
         <ul>

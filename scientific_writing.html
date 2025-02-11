@@ -16,34 +16,40 @@
             background-color: #004a99;
             color: white;
             padding: 20px;
-            font-size: 35px; /* Increased header text size */
+            font-size: 30px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            position: relative;
+            flex-wrap: wrap;
+            text-align: center;
         }
         .logo {
-            width: 200px; /* Increased logo size */
+            width: 150px;
         }
         nav {
             padding: 10px;
             background-color: #0073e6;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
         }
         nav a {
-            margin: 10px;
+            margin: 5px;
             padding: 10px;
             background-color: white;
             color: #0073e6;
             text-decoration: none;
             border-radius: 5px;
             font-weight: bold;
+            flex: 1 1 150px;
+            text-align: center;
         }
         nav a:hover {
             background-color: #005bb5;
             color: white;
         }
         .container {
-            max-width: 1400px;
+            max-width: 1200px;
             margin: auto;
             padding: 20px;
             background-color: white;
@@ -53,36 +59,26 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+            flex-wrap: wrap;
             text-align: left;
         }
-        .left-container {
+        .left-container, .right-container {
             flex: 1;
             text-align: center;
+            padding: 10px;
         }
-        .left-container img {
-            width: 190%;
-            max-width: 1900px;
+        .left-container img, .right-container img {
+            width: 100%;
+            max-width: 500px;
             border-radius: 10px;
-            margin-left: -350px;
-        }
-        .right-container {
-            flex: 1;
-            text-align: center;
-        }
-        .right-container img {
-            width: 190%;
-            max-width: 1900px;
-            border-radius: 10px;
-            margin-right: -200px;
         }
         .text-container {
             flex: 2;
             padding: 20px;
             text-align: left;
             font-size: 18px;
-            margin-left: 0px;
-            margin-right: 0px;
-            max-width: 900px; 
+            margin: auto;
+            max-width: 900px;
         }
         .text-container h2 {
             color: #004a99;
@@ -104,20 +100,51 @@
             display: flex;
             justify-content: center;
             margin-top: 20px;
+            flex-wrap: wrap;
         }
         .image-container img {
-            width: 150px;
-            height: 150px;
-            margin: 10px;
+            width: 100px;
+            height: 100px;
+            margin: 5px;
             border-radius: 10px;
         }
         footer {
             text-align: center;
-            padding: 10px;
+            padding: 15px;
             background-color: #004a99;
             color: white;
             margin-top: 20px;
             position: relative;
+        }
+        /* Responsive Design */
+        @media screen and (max-width: 900px) {
+            header {
+                font-size: 24px;
+                flex-direction: column;
+                text-align: center;
+            }
+            .logo {
+                width: 120px;
+            }
+            .container {
+                flex-direction: column;
+                text-align: center;
+            }
+            .left-container img, .right-container img {
+                max-width: 100%;
+                margin: auto;
+            }
+            .text-container {
+                text-align: center;
+            }
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav a {
+                width: 90%;
+                text-align: center;
+            }
         }
     </style>
 </head>
